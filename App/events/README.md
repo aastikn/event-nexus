@@ -1,6 +1,6 @@
 # events
 
-A new Flutter project.
+A new epic Flutter project.
 
 ## Getting Started
 
