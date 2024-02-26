@@ -5,6 +5,11 @@ go 1.21.5
 require github.com/gofiber/fiber/v2 v2.52.1
 
 require (
+	github.com/jinzhu/inflection v1.0.0 // indirect
+	github.com/jinzhu/now v1.1.5 // indirect
+)
+
+require (
 	github.com/andybalholm/brotli v1.0.5 // indirect
 	github.com/google/uuid v1.5.0 // indirect
 	github.com/klauspost/compress v1.17.0 // indirect
@@ -16,4 +21,5 @@ require (
 	github.com/valyala/fasthttp v1.51.0 // indirect
 	github.com/valyala/tcplisten v1.0.0 // indirect
 	golang.org/x/sys v0.15.0 // indirect
+	gorm.io/gorm v1.25.7
 )
