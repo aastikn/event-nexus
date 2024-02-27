@@ -2,6 +2,7 @@ import Image from "next/image";
 import styles from "./page.module.css";
 import { Roboto, Outfit } from "next/font/google";
 import Button from "./button";
+import Vartext from "./vartext";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -21,7 +22,8 @@ export default function Home() {
       <div className={styles.container}>
         <section className={styles.headingSection}>
           <div className={`${styles.heading} ${outfit.className} `}>
-            Swipe Right On Your Service Connections
+            Need a<br></br>
+            <Vartext /> ?
           </div>
           <div className={`${styles.subheading} ${roboto.className} `}>
             Find and hire top-notch services effortlessly.
