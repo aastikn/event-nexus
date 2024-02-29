@@ -1,0 +1,24 @@
+.main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 90vh;
+}
+
+.main *{
+    border: 2px red solid;
+}
+
+.leftGraphic{
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.rightForm{
+    width: 50vw;
+}
