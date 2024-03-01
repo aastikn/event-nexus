@@ -1,4 +1,5 @@
 'use client';
+
 import {useState} from "react";
 
 import styles from './page.module.css';
@@ -9,6 +10,7 @@ import { useRouter } from 'next/navigation'
 import { initializeApp } from "firebase/app";
 import { getAuth, signInWithPopup, GoogleAuthProvider, createUserWithEmailAndPassword  } from "firebase/auth";
 import firebaseConfig from "@/firebaseConfig";
+
 const provider = new GoogleAuthProvider();
 
 const outfit = Outfit({
@@ -27,7 +29,7 @@ export default function SignUpUser(){
 
     const handleError = (error) => {
         // Inside your handleError function
-        setErrorVisibility("block"); // or set it to "flex", "grid", etc., based on your design
+        setErrorVisibility("block");
         setError(error);
         setTimeout(() => {
             setErrorVisibility("none");

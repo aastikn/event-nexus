@@ -114,18 +114,18 @@
 .errorBox {
     position: fixed;
     z-index: 10;
-    background-color: #ff5252; /* A shade of red */
-    color: #fff; /* White text */
-    bottom: 2rem; /* Adjusted spacing from the bottom */
-    left: 50%; /* Center horizontally */
-    transform: translateX(-50%); /* Center horizontally */
-    padding: 1.5rem; /* Adjusted padding for better aesthetics */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle box shadow */
-    max-width: 400px; /* Set a maximum width */
-    width: 90%; /* Responsive width */
-    text-align: center; /* Center text */
-    transition: opacity 0.3s ease-in-out; /* Smooth transition */
+    background-color: #ff5252;
+    color: #fff;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
 }
 
 
