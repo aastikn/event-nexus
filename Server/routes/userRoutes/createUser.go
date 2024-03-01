@@ -1,12 +1,14 @@
 package UserRoutes
 
 import (
+	"Event-Nexus-Api/models"
+
 	"github.com/gofiber/fiber/v2"
 )
 
 // CreateUser handles the POST request to create a user
 func CreateUser(c *fiber.Ctx) error {
-	user := new(User)
+	user := new(models.User)
 
 	if err := c.BodyParser(user); err != nil {
 		return c.Status(fiber.StatusBadRequest).JSON(fiber.Map{
@@ -19,4 +21,3 @@ func CreateUser(c *fiber.Ctx) error {
 
 	return c.Status(fiber.StatusCreated).JSON(user)
 }
-
