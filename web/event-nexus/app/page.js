@@ -29,8 +29,8 @@ export default function Home() {
             Find and hire top-notch services effortlessly.
           </div>
           <div className={styles.buttons}>
-            <Button text="SIGN UP" route="signup" bgcolor="#8989E2"></Button>
-            <Button text="LOG IN" route="login" bgcolor="#000000"></Button>
+            <Button text="SIGN UP" route="user/signup" bgcolor="#8989E2"></Button>
+            <Button text="LOG IN" route="user/login" bgcolor="#000000"></Button>
           </div>
         </section>
         <section className={styles.rightSection}>
