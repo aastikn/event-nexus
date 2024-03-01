@@ -1,0 +1,129 @@
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100vw;
+    height: 90vh;
+}
+
+.leftGraphic {
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.rightForm {
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.activeMode {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+
+.activeMode label {
+    margin: 2vw;
+    color: #ffffff;
+    padding: 2vh 4vw;
+    font-size: 4vh;
+    border-radius: 25px;
+}
+
+.activeMode label:last-child {
+    box-shadow: 0 3px 10px #1F2025;
+    background: #1F2025;
+}
+
+.activeMode label:first-child {
+    box-shadow: 0 3px 10px #C991DD;
+    background: #C991DD;
+}
+
+.heading {
+    color: white;
+    font-size: 8vh;
+}
+
+.signupForm {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+.signupForm input {
+    width: 80%;
+    height: 6vh;
+    background: #D9D9D9;
+    color: #191919;
+    font-size: 3vh;
+    font-weight: 700;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    padding-left: 2vw;
+    border-radius: 15px;
+}
+
+.signupButton,
+.googleButton {
+    background: #D9D9D9;
+    width: 80%;
+    height: 6vh;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: black;
+    font-size: 3vh;
+    font-weight: 700;
+    border-radius: 15px;
+}
+
+.divider {
+    width: 80%;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    color: white;
+}
+
+.googleButton {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+}
+
+.googleButton h1 {
+    margin-left: 1vw;
+    font-size: 3vh;
+    font-weight: 700;
+    color: black;
+}
+
+.errorBox {
+    position: fixed;
+    z-index: 10;
+    background-color: #ff5252;
+    color: #fff;
+    bottom: 2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 90%;
+    text-align: center;
+    transition: opacity 0.3s ease-in-out;
+}
