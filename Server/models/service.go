@@ -7,8 +7,8 @@ import (
 
 type Service struct {
 	gorm.Model
-	ServiceID     uint16    `json:"service_id"`
-	BeginningDate time.Time `json:"beginning_date"`
-	EndDate       time.Time `json:"end_date"`
-	CostPrice     uint16    `json:"cost_price"`
+	ServiceID     uint16    `gorm:"primaryKey;uniqueIndex" json:"service_id"`
+	BeginningDate time.Time `gorm:"not null" json:"beginning_date"`
+	EndDate       time.Time `gorm:"not null" json:"end_date"`
+	CostPrice     uint16    `gorm:"not null" json:"cost_price"`
 }

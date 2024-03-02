@@ -1,6 +1,7 @@
 package serviceRoutes
 
 import (
+	database "Event-Nexus-Api/Database"
 	"Event-Nexus-Api/models"
 	"github.com/gofiber/fiber/v2"
 	"log"
@@ -46,9 +47,14 @@ func CreateService(c *fiber.Ctx) error {
 	//checking if service exists
 	existingService := models.Service{}
 	if database.Database.Db.Where("service_id = ?", service.ServiceID).First(&existingService).Error == nil {
-		log.Println("Similar Service already exists")
-		return c.Status(400).SendString("Similar Service already exists")
+		log.Println("Service already exists")
+		return c.Status(400).SendString("Service already exists")
+	}
+	result := database.Database.Db.Create(&service)
+	if result.Error != nil {
+		log.Printf("Error creating booking: %v\n", result.Error)
+		return c.Status(500).SendString("Error creating booking")
 	}
 
-	return c.SendString("Create Service")
+	return c.SendString("Created Service")
 }
