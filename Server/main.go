@@ -3,8 +3,9 @@ package main
 import (
 	database "Event-Nexus-Api/Database"
 	"Event-Nexus-Api/routes/serviceRoutes"
-	"github.com/gofiber/fiber/v2"
 	"log"
+
+	"github.com/gofiber/fiber/v2"
 )
 
 //var DB *gorm.DB
@@ -36,5 +37,6 @@ func main() {
 	//Service Routes
 	app.Post("/service", serviceRoutes.CreateService)
 	app.Get("/service/:id", serviceRoutes.GetService)
+	app.Delete("/service/:id", serviceRoutes.DeleteService)
 	log.Fatal(app.Listen(":3000"))
 }
