@@ -35,5 +35,6 @@ func main() {
 
 	//Service Routes
 	app.Post("/service", serviceRoutes.CreateService)
+	app.Get("/service/:id", serviceRoutes.GetService)
 	log.Fatal(app.Listen(":3000"))
 }
