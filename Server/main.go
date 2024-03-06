@@ -3,6 +3,7 @@ package main
 import (
 	database "Event-Nexus-Api/Database"
 	"Event-Nexus-Api/routes/serviceRoutes"
+	UserRoutes "Event-Nexus-Api/routes/userRoutes"
 	"log"
 
 	"github.com/gofiber/fiber/v2"
@@ -38,5 +39,9 @@ func main() {
 	app.Post("/service", serviceRoutes.CreateService)
 	app.Get("/service/:id", serviceRoutes.GetService)
 	app.Delete("/service/:id", serviceRoutes.DeleteService)
+
+	//User Routes
+	app.Post("/user", UserRoutes.CreateUser)
+
 	log.Fatal(app.Listen(":3000"))
 }
